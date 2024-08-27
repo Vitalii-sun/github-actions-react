@@ -11,7 +11,7 @@ jobs:
             - name: Bild project
               run: npm run build
             - name: Upload Artifact
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 path: build
                 name: build-files
@@ -20,6 +20,6 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - name: Get build progect
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                   name: build-files
