@@ -2,7 +2,7 @@ name: Rest React App
 on: push
 jobs: 
   test_app:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get the code!
         uses: action/checkout@v4
